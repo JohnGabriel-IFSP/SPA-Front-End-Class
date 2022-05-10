@@ -54,10 +54,10 @@ body{
 #btnOpenMenu{
     cursor: pointer;
     width: 50px;
-    height: 100vh;
+    height: 100%;
     background-color: var(--black-color);
     color: var(--white-color);
-    position: absolute;
+    position: fixed;
     border: none;
     padding: 15px;
     font-size: 24px;
