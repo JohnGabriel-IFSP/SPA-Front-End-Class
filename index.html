@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root">
+        <div class="toggle-menu">
+            <button id="btnOpenMenu" onclick="openMenu()">&#10095</button>
+        </div>
+        <nav id="main-nav" class="sidebar">
+            <a href="javascript:void(0)" id="closeMenu" class="sidebar_link" onclick="closeMenu()">&times;</a>
+            <a class="sidebar_link" href="/" onclick="route()">Início</a>
+            <a class="sidebar_link" href="/introduction" onclick="route()">Apresentação da Disciplina</a>
+            <a class="sidebar_link" href="/description" onclick="route()">Ementa</a>
+            <a class="sidebar_link" href="/purpose" onclick="route()">Objetivo</a>
+            <a class="sidebar_link" href="/content" onclick="route()">Conteúdo Programático</a>
+            <a class="sidebar_link" href="/about" onclick="route()">Sobre</a>
+        </nav>
+        <div id="main-page"></div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/router.js"></script>
+</body>
+</html>
